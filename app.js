@@ -32,7 +32,7 @@ var multer = require("multer");
 
 var watson = require('watson-developer-cloud');
 
-var document_conversion = watson.document_conversion({
+const document_conversion = watson.document_conversion({
   username: 'a51ca65e-776c-42e8-bb5b-4480d952e1c0',
   password: 'mlo67ua6vBXB',
   version: 'v1',
@@ -70,7 +70,7 @@ app.post("/simpleupload", multer({ dest: "./uploads"}).single("uploadedFile"), f
 					if (err) {
 						console.error(err);
 					} else {
-						console.log(JSON.stringify(response, null, 2));
+						res.json(JSON.stringify(response, null, 2));
 					}
 				});
   			}
