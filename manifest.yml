@@ -6,3 +6,5 @@ applications:
   name: DocumentConversionTset
   host: DocumentConversionTset
   disk_quota: 1024M
+  services:
+    - Document Conversion-o3
