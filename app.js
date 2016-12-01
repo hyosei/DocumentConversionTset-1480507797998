@@ -42,7 +42,7 @@ const document_conversion = watson.document_conversion({
 // custom configuration
 var config = {
    "answer_units": {
-        "selector_tags": [".course",".professor",".time",".college",".major",".weight",".credit",".pnp",".url",".mileage",".rating"]
+        "selector_tags": ["div.course","div.professor","div.time","div.college","div.major","div.weight","div.credit","div.pnp","div.url","div.mileage","div.rating"]
     }
 }
 
