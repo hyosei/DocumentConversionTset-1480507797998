@@ -41,15 +41,10 @@ const document_conversion = watson.document_conversion({
 
 // custom configuration
 var config = {
-	word: {
-		heading: {
-			fonts: [
-				{ level: 1, min_size: 24 },
-				{ level: 2, min_size: 16, max_size: 24 }
-			]
-		}
-	}
-};
+   "answer_units": {
+        "selector_tags": [".course",".professor",".time",".college",".major",".weight",".credit",".pnp",".url",".mileage",".rating"]
+    }
+}
 
 app.post("/simpleupload", multer({ dest: "./uploads"}).single("uploadedFile"), function(req,res){
 	console.log(req.file);
