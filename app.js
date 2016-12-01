@@ -74,6 +74,6 @@ app.post("/simpleupload", multer({ dest: "./uploads"}).single("uploadedFile"), f
 					}
 				});
   			}
-  		})
+  		});
 	});
 });
