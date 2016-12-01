@@ -33,8 +33,8 @@ var multer = require("multer");
 var watson = require('watson-developer-cloud');
 
 var document_conversion = watson.document_conversion({
-  username: 'c51f344d-c736-4d98-b96a-89b3aa3eb0b1',
-  password: '304NhITrp6BM',
+  username: 'a51ca65e-776c-42e8-bb5b-4480d952e1c0',
+  password: 'mlo67ua6vBXB',
   version: 'v1',
   version_date: '2015-12-15'
 });
